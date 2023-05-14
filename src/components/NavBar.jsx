@@ -9,7 +9,7 @@ const NavBar = () => {
         <React.Fragment>
     <header class="header">
         <div class="logo"><a href="/">
-            <img src={logo} alt ="Logo del blog"/></a>
+            <img class="logo" src={logo} alt ="Logo del blog"/></a>
         </div>
         <nav>
             <u1 class = "nav-links">
@@ -17,8 +17,7 @@ const NavBar = () => {
                  <li><a href="/aboutus">Contacto</a></li>
                  {console.log(authUser)}
                  {authUser != null ? <li className="userHead">Bienvenido {authUser.email}</li> : [] }
-                 {authUser != null ? <button className="button_closeSesion" onClick={userSignOut}>Cerrar Sesión</button>: <a className="loginRedirect" href="/login">Iniciar Sesion</a>}   
-                 <li><a href="/aboutus">About Us</a></li>      
+                 {authUser != null ? <button className="button_closeSesion" onClick={userSignOut}>Cerrar Sesión</button>: <a className="loginRedirect" href="/login">Iniciar Sesion</a>}        
             </u1>
         </nav>
        
@@ -41,7 +40,7 @@ const NavBar = () => {
 //                     <div className="optionsNavbar">
 //                         <ul>
 //                             <li><a href="#">About Us</a></li>
-//                             <li><a href="/aboutus">Contactos</a></li>
+//                             <li><a href="/contactos">Contactos</a></li>
 //                         </ul>
 //                     </div>
 //                 </div>

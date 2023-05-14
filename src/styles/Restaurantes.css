@@ -10,6 +10,9 @@
 .h1Restaurante{
     font-weight: 500;
     font-size: 45px;
-    margin-top: 50px;
+    padding-top: 50px;
     margin-left: 30px;
+}
+.espacioVacio{
+    margin-top: 25%;
 }

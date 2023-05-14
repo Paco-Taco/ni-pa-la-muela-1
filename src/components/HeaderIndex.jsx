@@ -2,27 +2,28 @@ import React from "react"
 import "../styles/headerIndex.css"
 import logo from "../img/logo.png"
 import { UserAuth } from "./auth/AuthContext"
+import "./js/NavBarScript"
 
 const HeaderIndex = () => {
     const {authUser,userSignOut} = UserAuth()
     return(
         <React.Fragment>
         <header class="header">
-        <div class="logo">
-            <img src={logo} alt ="Logo del blog"/>
-        </div>
-        <nav>
-            <u1 class = "nav-links">
-                 <li><a href="/restaurants">Restaurantes</a></li> 
-                 <li><a href="/aboutus">Contactos</a></li>   
-                 {console.log(authUser)}
-                 {authUser != null ? <li className="userHead">Bienvenido {authUser.email}</li> : [] }
-                 {authUser != null ? <button className="button_closeSesion" onClick={userSignOut}>Cerrar Sesión</button>: <a className="loginRedirect" href="/login">Iniciar Sesion</a>}         
-                <li><a href="/aboutus">About Us</a></li>
-            </u1>
-        </nav>
+            <div class="logo">
+                <img src={logo} alt ="Logo del blog"/>
+            </div>
+            <nav>
+                <u1 class = "nav-links">
+                    <li><a href="/restaurants">Restaurantes</a></li> 
+                    <li><a href="/aboutus">Contactos</a></li>   
+                    {console.log(authUser)}
+                    {authUser != null ? <li className="userHead">Bienvenido {authUser.email}</li> : [] }
+                    {authUser != null ? <button className="button_closeSesion" onClick={userSignOut}>Cerrar Sesión</button>: <a className="loginRedirect" href="/login">Iniciar Sesion</a>}         
+ 
+                </u1>
+            </nav>
        
-    </header>
+        </header>
 
     <div class="banner">
         <h1>¿De qué tienes antojo, chaparro?</h1>
@@ -30,6 +31,7 @@ const HeaderIndex = () => {
             <a href="/restaurants"><button>Ver menú de restaurantes</button></a>
         </div>
     </div>
+    <div className="divVacio"></div>
         </React.Fragment>
     )
 }

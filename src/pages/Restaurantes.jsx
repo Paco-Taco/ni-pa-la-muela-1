@@ -6,7 +6,7 @@ import "../styles/Restaurantes.css"
 
 const Restaurantes = () => {
 
-    const url = "http://localhost:4000/api/restaurants"
+    const url = "http://localhost:3000/api/restaurants"
     
     const [restaurants, setRestaurants] = useState();
 
