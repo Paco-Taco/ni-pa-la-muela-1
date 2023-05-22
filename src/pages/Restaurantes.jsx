@@ -3,10 +3,11 @@ import RestaurantCard from "../components/RestaurantCard";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer"
 import "../styles/Restaurantes.css"
+import notFoundImg from "../img/404.png"
 
 const Restaurantes = () => {
 
-    const url = "http://localhost:3000/api/restaurants"
+    const url = "http://localhost:4000/api/restaurants"
     
     const [restaurants, setRestaurants] = useState();
 
@@ -41,12 +42,14 @@ const Restaurantes = () => {
                                 key={i._id}
                                 {...i}
                             />
-                        ): <h1>NO HAY DATOS</h1>
+                        ): 
+                    <div className="NoData">
+                        <h1>NO HAY DATOS</h1>
+                        <img className="notFoundImg" src= {notFoundImg} alt="No hay nada pa'" />
+                    </div>
                 }
 
             </div>
-
-            <div className="espacioVacio"></div>
 
             <Footer/>
         </React.Fragment>

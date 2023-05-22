@@ -15,10 +15,10 @@ const Footer = () => {
             </div>
             <div className="rsFooter">
                 <ul>
-                    <a href=""><li><img src={gb} alt="" /></li></a>
-                    <a href=""><li><img src={ig} alt="" /></li></a>
-                    <a href=""><li><img src={fb} alt="" /></li></a>
-                    <a href=""><li><img src={linkedin} alt="" /></li></a>
+                    <a href="https://github.com/Paco-Taco/ni-pa-la-muela-1" target="blank"><li><img src={gb} alt="" /></li></a>
+                    <a href="https://www.instagram.com/" target="blank"><li><img src={ig} alt="" /></li></a>
+                    <a href="https://www.facebook.com/" target="blank"><li><img src={fb} alt="" /></li></a>
+                    <a href="https://mx.linkedin.com/" target="blank"><li><img src={linkedin} alt="" /></li></a>
                 </ul>
 
             </div>

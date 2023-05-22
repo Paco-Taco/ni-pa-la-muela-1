@@ -4,6 +4,7 @@
     font-weight: 300;
     margin-left: 50px;
     padding-top: 80px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 .contactsDiv{
     width: 80%;
@@ -11,8 +12,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 10%;
-}
-
-.espacioVacio{
-    margin-top: 25%;
+    position: relative;
+    min-height: 50vh;
 }

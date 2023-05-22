@@ -66,7 +66,7 @@ const Zo = () => {
                     {
                             areThereRestaurants === false?
                             <h1>{filterDataZo[0].nameRestaurant}</h1>:
-                            <h2>No llega nada perquin</h2>
+                            <h2>No llega nada, perquin</h2>
                     }
                     {
                             areThereRestaurants === false?
@@ -104,10 +104,10 @@ const Zo = () => {
 
                 }
                 <div className="textUbication">
-                <h3 className="titleUbicationH3">¿Donde puedes encontrarlos?</h3>
+                <h3 className="titleUbicationH3">¿Dónde puedes encontrarlos?</h3>
                 {
                     areThereRestaurants === false ?
-                    <p>Sin duda hemos quedado fascinados con este bello restaurant llamado <span>{filterDataZo[0].nameRestaurant}</span>, te dejamos un mapa el cual puedes utilizarlo para llegar a comer en el.</p>:[]
+                    <p>Sin duda, hemos quedado fascinados con este bello restaurant llamado <span>{filterDataZo[0].nameRestaurant}</span>, te dejamos un mapa, el cual puedes utilizarlo para llegar a comer en él.</p>:[]
                 }
                 
                 </div>
@@ -127,7 +127,7 @@ const Zo = () => {
                                         key = {i.id}
                                         {...i}
                                     />
-                                    ):<h1>No hay comentarios pa</h1>
+                                    ):<h1>No hay comentarios pa'</h1>
                         }
             </div>
 

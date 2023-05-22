@@ -3,16 +3,34 @@
     height: auto;
     margin-left: 10%;
     display: flex;
-    margin-bottom: 150px;
+    margin-bottom: 0px;
     flex-wrap: wrap;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .h1Restaurante{
     font-weight: 500;
     font-size: 45px;
-    padding-top: 50px;
-    margin-left: 30px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    text-align: center;
 }
-.espacioVacio{
-    margin-top: 25%;
+/* .espacioVacio{
+    margin-top: 5%;
+} */
+
+.NoData{
+    display: block;
+    height: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.NoData h1{
+    padding-bottom: 40px;
+}
+
+.NoData .notFoundImg{
+    height: 50%;
+    width: auto;
 }

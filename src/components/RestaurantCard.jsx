@@ -11,15 +11,17 @@ const RestaurantCard = (props) => {
     return(
         <div className = "tarjetaRestaurante">
             <div className = "leftSection">
-            <img src={photoOfRestaurant} alt=""/>
-        </div>
-        <div className = "rightSection">
-            <h2>{nameRestaurant}</h2>
-            <p>{shortDescriptionRestaurant}</p>
-            <a href={linkResenas}><button>Ir a la reseña</button></a>
-            
-        </div>     
-    </div>
+                <img src={photoOfRestaurant} alt=""/>
+            </div>
+
+            <div className = "rightSection">
+                <h2>{nameRestaurant}</h2>
+                <p>{shortDescriptionRestaurant}</p>
+                <div className="boton">
+                    <a href={linkResenas}><button>Ir a la reseña</button></a>
+                </div>
+            </div>
+        </div>    
     )
 }
 

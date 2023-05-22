@@ -6,11 +6,14 @@
     height: 250px;
     display: flex;
     box-shadow: 5px 5px 15px gray;
+    border-radius: 5px;   
+}
+.tarjetaRestaurante img{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .tarjetaRestaurante .leftSection{
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
     width: 40%;
     height: 250px;
 }
@@ -23,11 +26,14 @@
     border-top-right-radius: 5px;
     width: 60%;
     height: 270px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .rightSection h2{
-    margin-top: 20px;
-    margin-left: 8px;
+    padding-top: 20px;
+    padding-left: 8px;
 }
 
 .rightSection p{
@@ -37,10 +43,15 @@
     margin-top: 15px;
     margin-right: 25px;
     text-align: justify;
-
+    flex-grow: .5;
 }
 
-.rightSection button{
+.rightSection .boton{
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+.rightSection .boton button{
     width: 50%;
     height: 40px;
     margin-left: 5px;
@@ -57,5 +68,5 @@
     cursor: pointer;
     background-color: #0e6d22;
     color: white;
-    border: none; ;
+    border: none;
 }

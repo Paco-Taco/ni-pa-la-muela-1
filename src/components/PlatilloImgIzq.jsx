@@ -70,7 +70,7 @@ const PlatilloImgIzq = (props) => {
                     <h1 class="tituloPlatillo">{titleSaucer}</h1>
                     <p>{descriptionSaucer}</p>
                     <h2>Precio: ${priceOfSaucer}</h2>
-                    <div class="estrellas"><h3>Calificacion: </h3><img src={renderSwitch(calificationSaucer)} alt=""/></div>
+                    <div class="estrellas"><h3>Calificación: </h3><img src={renderSwitch(calificationSaucer)} alt=""/></div>
                 </div>
             </div>
         </React.Fragment>

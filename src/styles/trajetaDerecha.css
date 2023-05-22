@@ -28,12 +28,14 @@
     height: 350px;
     background-position-y: -100px;
     background-size: cover;
+    transition: 250ms;
 }
 
 .imagenTarjeta:hover{
     opacity: 0.8;
     transition: 250ms;
     cursor: pointer;
+    box-shadow: 2px 7px 10px;
 }
 
 .resenaTarjeta{
@@ -71,10 +73,12 @@
     background-image: url("https://images.pexels.com/photos/14740600/pexels-photo-14740600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
     background-position-y: -100px;
+    transition: 250ms;
 }
 
 .imgDere:hover{
     transition: 250ms;
     opacity: 0.7;
     cursor: pointer;
+    box-shadow: 2px 7px 10px;
 }

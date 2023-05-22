@@ -18,7 +18,7 @@ const HeaderIndex = () => {
                     <li><a href="/aboutus">Contactos</a></li>   
                     {console.log(authUser)}
                     {authUser != null ? <li className="userHead">Bienvenido {authUser.email}</li> : [] }
-                    {authUser != null ? <button className="button_closeSesion" onClick={userSignOut}>Cerrar Sesión</button>: <a className="loginRedirect" href="/login">Iniciar Sesion</a>}         
+                    {authUser != null ? <button className="button_closeSesion" onClick={userSignOut}>Cerrar Sesión</button>: <a className="loginRedirect" href="/login">Iniciar Sesión</a>}         
  
                 </u1>
             </nav>

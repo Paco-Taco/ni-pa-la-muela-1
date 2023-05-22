@@ -43,8 +43,6 @@ const Aboutus = () => {
                 
             </div>
 
-            <div className="espacioVacio"></div>
-
             <Footer/>
         </React.Fragment>
     )
